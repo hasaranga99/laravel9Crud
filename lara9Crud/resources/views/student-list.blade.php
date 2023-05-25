@@ -21,6 +21,11 @@
                     <div style="margin: right 10%; float: right">
                         <a href="{{ url('add-student') }}" class="btn btn-primary">Add Student</a>
                     </div>
+                    @if(Session::has('success'))
+                        <div class="alert alert-success" role="alert">
+                        {{Session::get('success')}}
+                        </div>
+                    @endif
                     <table class="table">
                         <thead>
                             <tr>
@@ -40,7 +45,10 @@
                                 <td>{{$stu->email}}</td>
                                 <td>{{$stu->phone}}</td>
                                 <td>{{$stu->address}}</td>
-                                <td>Edit | Delete</td>
+                                <td><a href="{{ url('edit-student/'.$stu->id) }}" 
+                                class="btn btn-primary">Edit</a> | <a href="{{ url('delete-student/'.$stu->id) }}" 
+                                class="btn btn-danger">Delete</a></td>
+                                    
                             </tr>
                             @endforeach
                         </tbody>
