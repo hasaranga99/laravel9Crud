@@ -19,7 +19,7 @@
                 <div class="col-md-12">
                     <h2>Student List</h2>
                     <div style="margin: right 10%; float: right">
-                        <a href="{{ url('add-student') }}">Add</a>
+                        <a href="{{ url('add-student') }}" class="btn btn-primary">Add Student</a>
                     </div>
                     <table class="table">
                         <thead>
