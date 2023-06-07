@@ -12,13 +12,14 @@
             integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="{{asset('CSS/list.css')}}"/>
     </head>
     <body>
         <div class="container" style="margin: top 20px">
             <div class="row">
                 <div class="col-md-12">
                     <h2>Student List</h2>
-                    <div style="margin: right 10%; float: right">
+                    <div style="margin: right 10%; float: right" >
                         <a href="{{ url('add-student') }}" class="btn btn-primary">Add Student</a>
                     </div>
                     @if(Session::has('success'))

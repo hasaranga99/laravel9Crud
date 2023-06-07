@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: url(https://wallpaperset.com/w/full/d/2/b/115638.jpg);
+    background-size: cover;
+}
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.3);
+}
+.form {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: url(https://wallpapers.com/images/hd/high-resolution-gold-background-1920-x-1200-hc3dn6agjxmshjp1.jpg);
+    background-size: cover;
+}
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    background: radial-gradient(
+            ellipse farthest-corner at right bottom,
+            #fedb37 0%,
+            #fdb931 8%,
+            #9f7928 30%,
+            #8a6e2f 40%,
+            transparent 80%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at left top,
+            #fdb931 8%,
+            #fdb931 8%,
+            #fdb931 8%,
+            #fdb931 8%,
+            #fdb931 8%
+        );
+    width: 360px;
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, font-size, color, transform;
+    transition-property: box-shadow, font-size, color, transform;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    box-shadow: 0 0 20px rgba(255, 246, 0, 0.9);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: #ffec98;
+    font-size: 48px;
+}

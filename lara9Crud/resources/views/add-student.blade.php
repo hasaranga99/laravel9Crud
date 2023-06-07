@@ -12,6 +12,7 @@
             integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="{{asset('CSS/add.css')}}"/>
 </head>
 <body>
 <div class="container" style="margin: top 20px">
@@ -23,7 +24,7 @@
             {{Session::get('success')}}
           </div>
           @endif
-          <form method="post" action="{{url('save-student')}}">
+          <form method="post" action="{{url('save-student')}}" class="form">
             @csrf
             <div class="md-3">
               <label class="form-lebel">Name</label>
